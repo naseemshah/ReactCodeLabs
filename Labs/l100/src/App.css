@@ -1,3 +1,71 @@
 body{
   background-color: #9055A2;
+  transition: all 200ms;
+}
+
+.App{
+  text-align: center;
+  height: 100vh;
+}
+
+h1{
+  font-size: 5em;
+}
+
+.sub{
+  width: 300px;
+  color: antiquewhite;
+  font-style: italic;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.376);
+}
+
+button{
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.507);
+  border-radius: 10px;
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
+button:hover{
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+  border-radius: 10px;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.507);
+  cursor: pointer;
+  outline: none;
+}
+
+button:active{
+  animation: btnbg 0.1s;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+@keyframes btnbg{
+  from{
+    background-color: black;
+  }
+
+  50%{
+    background-color: orange;
+    transform: scale(1.08);
+
+  }
+  
+  to{
+    background-color: black;
+
+  }
 }
